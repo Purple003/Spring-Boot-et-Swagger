@@ -2,7 +2,7 @@
 
 Application Spring Boot pour la gestion des étudiants avec documentation Swagger/OpenAPI.
 
-## 🚀 Technologies utilisées
+## Technologies utilisées
 
 - **Spring Boot 3.2.4**
 - **Java 21**
@@ -13,14 +13,14 @@ Application Spring Boot pour la gestion des étudiants avec documentation Swagge
 - **Maven** - Gestion des dépendances
 - **Lombok** - Réduction du code boilerplate
 
-## 📋 Prérequis
+## Prérequis
 
 - Java 21 ou supérieur
 - MySQL 8.0 ou supérieur
 - Maven 3.6+
 - IntelliJ IDEA (recommandé) ou tout autre IDE Java
 
-## ⚙️ Configuration
+## Configuration
 
 ### 1. Base de données MySQL
 
@@ -48,7 +48,7 @@ server.port=8080
 
 **Note :** Modifiez `spring.datasource.password` si votre MySQL a un mot de passe.
 
-## 🏗️ Installation et exécution
+## Installation et exécution
 
 ### Compiler le projet
 
@@ -64,15 +64,15 @@ mvn spring-boot:run
 
 L'application démarre sur **http://localhost:8080**
 
-## 📚 Documentation API (Swagger)
+## Documentation API (Swagger)
 
 Une fois l'application lancée, accédez à la documentation Swagger :
 
 **http://localhost:8080/swagger-ui.html**
+<img width="1893" height="938" alt="Screenshot 2025-11-26 022039" src="https://github.com/user-attachments/assets/9636cb3c-cfd1-47b3-9ca3-76910cdec8ac" />
 
-![Swagger UI](screenshots/swagger.png)
 
-## 🗄️ Structure de la base de données
+## Structure de la base de données
 
 La table `student` est créée automatiquement avec la structure suivante :
 
@@ -83,9 +83,10 @@ La table `student` est créée automatiquement avec la structure suivante :
 | prenom          | VARCHAR | Prénom de l'étudiant     |
 | date_naissance  | DATE    | Date de naissance        |
 
-![Base de données](screenshots/database.png)
+<img width="1276" height="557" alt="Screenshot 2025-11-26 022101" src="https://github.com/user-attachments/assets/80d7551d-9e1e-447a-8ba9-8be279da44c9" />
 
-## 🔌 Endpoints REST
+
+## Endpoints REST
 
 ### Créer un étudiant
 ```http
@@ -119,7 +120,7 @@ GET /students/count
 GET /students/byYear
 ```
 
-## 🧪 Tests
+## Tests
 
 Exécuter les tests unitaires :
 
@@ -127,7 +128,7 @@ Exécuter les tests unitaires :
 mvn test
 ```
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 student-management/
@@ -152,23 +153,9 @@ student-management/
 └── README.md
 ```
 
-## 🛠️ Corrections apportées
 
-Les erreurs suivantes ont été corrigées :
 
-✅ **Problèmes de compilation**
-- Mise à jour Maven Compiler Plugin (3.11.0 → 3.13.0)
-- Mise à jour Lombok (1.18.30 → 1.18.34)
-- Ajout des arguments `--add-opens` pour compatibilité Java 21
+## Auteur
+Arroche Aya
 
-✅ **Erreurs de code**
-- Correction des types génériques `ResponseEntity` dans `StudentController`
-- Tous les constructeurs utilisent maintenant des types explicites
 
-## 👨‍💻 Auteur
-
-Projet réalisé dans le cadre du TP Spring Boot et Swagger
-
-## 📄 Licence
-
-Ce projet est à usage éducatif.
